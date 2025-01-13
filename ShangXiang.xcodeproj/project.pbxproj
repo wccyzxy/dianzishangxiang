@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9ACAC3642D31321400769BEB /* ShangXiang Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9ACAC3632D31321400769BEB /* ShangXiang Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ACAC34E2D31321400769BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACAC3352D31321300769BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACAC33C2D31321300769BEB;
+			remoteInfo = ShangXiang;
+		};
+		9ACAC3582D31321400769BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACAC3352D31321300769BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACAC33C2D31321300769BEB;
+			remoteInfo = ShangXiang;
+		};
+		9ACAC3652D31321400769BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACAC3352D31321300769BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACAC3622D31321400769BEB;
+			remoteInfo = "ShangXiang Watch App";
+		};
+		9ACAC3762D31321500769BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACAC3352D31321300769BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACAC3622D31321400769BEB;
+			remoteInfo = "ShangXiang Watch App";
+		};
+		9ACAC3802D31321500769BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACAC3352D31321300769BEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACAC3622D31321400769BEB;
+			remoteInfo = "ShangXiang Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ACAC38C2D31321500769BEB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9ACAC3642D31321400769BEB /* ShangXiang Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9ACAC33D2D31321300769BEB /* ShangXiang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShangXiang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACAC34D2D31321400769BEB /* ShangXiangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShangXiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACAC3572D31321400769BEB /* ShangXiangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShangXiangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACAC3632D31321400769BEB /* ShangXiang Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShangXiang Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACAC3752D31321500769BEB /* ShangXiang Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShangXiang Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACAC37F2D31321500769BEB /* ShangXiang Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShangXiang Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9ACAC3A22D33BF0200769BEB /* Exceptions for "ShangXiang Watch App" folder in "ShangXiang Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9ACAC3622D31321400769BEB /* ShangXiang Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9ACAC33F2D31321300769BEB /* ShangXiang */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShangXiang;
+			sourceTree = "<group>";
+		};
+		9ACAC3502D31321400769BEB /* ShangXiangTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShangXiangTests;
+			sourceTree = "<group>";
+		};
+		9ACAC35A2D31321400769BEB /* ShangXiangUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShangXiangUITests;
+			sourceTree = "<group>";
+		};
+		9ACAC3672D31321400769BEB /* ShangXiang Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9ACAC3A22D33BF0200769BEB /* Exceptions for "ShangXiang Watch App" folder in "ShangXiang Watch App" target */,
+			);
+			path = "ShangXiang Watch App";
+			sourceTree = "<group>";
+		};
+		9ACAC3782D31321500769BEB /* ShangXiang Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ShangXiang Watch AppTests";
+			sourceTree = "<group>";
+		};
+		9ACAC3822D31321500769BEB /* ShangXiang Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ShangXiang Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ACAC33A2D31321300769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC34A2D31321400769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3542D31321400769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3602D31321400769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3722D31321500769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC37C2D31321500769BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ACAC3342D31321300769BEB = {
+			isa = PBXGroup;
+			children = (
+				9ACAC33F2D31321300769BEB /* ShangXiang */,
+				9ACAC3502D31321400769BEB /* ShangXiangTests */,
+				9ACAC35A2D31321400769BEB /* ShangXiangUITests */,
+				9ACAC3672D31321400769BEB /* ShangXiang Watch App */,
+				9ACAC3782D31321500769BEB /* ShangXiang Watch AppTests */,
+				9ACAC3822D31321500769BEB /* ShangXiang Watch AppUITests */,
+				9ACAC33E2D31321300769BEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ACAC33E2D31321300769BEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ACAC33D2D31321300769BEB /* ShangXiang.app */,
+				9ACAC34D2D31321400769BEB /* ShangXiangTests.xctest */,
+				9ACAC3572D31321400769BEB /* ShangXiangUITests.xctest */,
+				9ACAC3632D31321400769BEB /* ShangXiang Watch App.app */,
+				9ACAC3752D31321500769BEB /* ShangXiang Watch AppTests.xctest */,
+				9ACAC37F2D31321500769BEB /* ShangXiang Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ACAC33C2D31321300769BEB /* ShangXiang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC38D2D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang" */;
+			buildPhases = (
+				9ACAC3392D31321300769BEB /* Sources */,
+				9ACAC33A2D31321300769BEB /* Frameworks */,
+				9ACAC33B2D31321300769BEB /* Resources */,
+				9ACAC38C2D31321500769BEB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ACAC3662D31321400769BEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC33F2D31321300769BEB /* ShangXiang */,
+			);
+			name = ShangXiang;
+			packageProductDependencies = (
+			);
+			productName = ShangXiang;
+			productReference = 9ACAC33D2D31321300769BEB /* ShangXiang.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ACAC34C2D31321400769BEB /* ShangXiangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC3902D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiangTests" */;
+			buildPhases = (
+				9ACAC3492D31321400769BEB /* Sources */,
+				9ACAC34A2D31321400769BEB /* Frameworks */,
+				9ACAC34B2D31321400769BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ACAC34F2D31321400769BEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC3502D31321400769BEB /* ShangXiangTests */,
+			);
+			name = ShangXiangTests;
+			packageProductDependencies = (
+			);
+			productName = ShangXiangTests;
+			productReference = 9ACAC34D2D31321400769BEB /* ShangXiangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9ACAC3562D31321400769BEB /* ShangXiangUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC3932D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiangUITests" */;
+			buildPhases = (
+				9ACAC3532D31321400769BEB /* Sources */,
+				9ACAC3542D31321400769BEB /* Frameworks */,
+				9ACAC3552D31321400769BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ACAC3592D31321400769BEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC35A2D31321400769BEB /* ShangXiangUITests */,
+			);
+			name = ShangXiangUITests;
+			packageProductDependencies = (
+			);
+			productName = ShangXiangUITests;
+			productReference = 9ACAC3572D31321400769BEB /* ShangXiangUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9ACAC3622D31321400769BEB /* ShangXiang Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC3892D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch App" */;
+			buildPhases = (
+				9ACAC35F2D31321400769BEB /* Sources */,
+				9ACAC3602D31321400769BEB /* Frameworks */,
+				9ACAC3612D31321400769BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC3672D31321400769BEB /* ShangXiang Watch App */,
+			);
+			name = "ShangXiang Watch App";
+			packageProductDependencies = (
+			);
+			productName = "ShangXiang Watch App";
+			productReference = 9ACAC3632D31321400769BEB /* ShangXiang Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ACAC3742D31321500769BEB /* ShangXiang Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC3962D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch AppTests" */;
+			buildPhases = (
+				9ACAC3712D31321500769BEB /* Sources */,
+				9ACAC3722D31321500769BEB /* Frameworks */,
+				9ACAC3732D31321500769BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ACAC3772D31321500769BEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC3782D31321500769BEB /* ShangXiang Watch AppTests */,
+			);
+			name = "ShangXiang Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "ShangXiang Watch AppTests";
+			productReference = 9ACAC3752D31321500769BEB /* ShangXiang Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9ACAC37E2D31321500769BEB /* ShangXiang Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACAC3992D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch AppUITests" */;
+			buildPhases = (
+				9ACAC37B2D31321500769BEB /* Sources */,
+				9ACAC37C2D31321500769BEB /* Frameworks */,
+				9ACAC37D2D31321500769BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ACAC3812D31321500769BEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9ACAC3822D31321500769BEB /* ShangXiang Watch AppUITests */,
+			);
+			name = "ShangXiang Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "ShangXiang Watch AppUITests";
+			productReference = 9ACAC37F2D31321500769BEB /* ShangXiang Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ACAC3352D31321300769BEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9ACAC33C2D31321300769BEB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9ACAC34C2D31321400769BEB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9ACAC33C2D31321300769BEB;
+					};
+					9ACAC3562D31321400769BEB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9ACAC33C2D31321300769BEB;
+					};
+					9ACAC3622D31321400769BEB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9ACAC3742D31321500769BEB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9ACAC3622D31321400769BEB;
+					};
+					9ACAC37E2D31321500769BEB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9ACAC3622D31321400769BEB;
+					};
+				};
+			};
+			buildConfigurationList = 9ACAC3382D31321300769BEB /* Build configuration list for PBXProject "ShangXiang" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ACAC3342D31321300769BEB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9ACAC33E2D31321300769BEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ACAC33C2D31321300769BEB /* ShangXiang */,
+				9ACAC34C2D31321400769BEB /* ShangXiangTests */,
+				9ACAC3562D31321400769BEB /* ShangXiangUITests */,
+				9ACAC3622D31321400769BEB /* ShangXiang Watch App */,
+				9ACAC3742D31321500769BEB /* ShangXiang Watch AppTests */,
+				9ACAC37E2D31321500769BEB /* ShangXiang Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ACAC33B2D31321300769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC34B2D31321400769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3552D31321400769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3612D31321400769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3732D31321500769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC37D2D31321500769BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ACAC3392D31321300769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3492D31321400769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3532D31321400769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC35F2D31321400769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC3712D31321500769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACAC37B2D31321500769BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ACAC34F2D31321400769BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACAC33C2D31321300769BEB /* ShangXiang */;
+			targetProxy = 9ACAC34E2D31321400769BEB /* PBXContainerItemProxy */;
+		};
+		9ACAC3592D31321400769BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACAC33C2D31321300769BEB /* ShangXiang */;
+			targetProxy = 9ACAC3582D31321400769BEB /* PBXContainerItemProxy */;
+		};
+		9ACAC3662D31321400769BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACAC3622D31321400769BEB /* ShangXiang Watch App */;
+			targetProxy = 9ACAC3652D31321400769BEB /* PBXContainerItemProxy */;
+		};
+		9ACAC3772D31321500769BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACAC3622D31321400769BEB /* ShangXiang Watch App */;
+			targetProxy = 9ACAC3762D31321500769BEB /* PBXContainerItemProxy */;
+		};
+		9ACAC3812D31321500769BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACAC3622D31321400769BEB /* ShangXiang Watch App */;
+			targetProxy = 9ACAC3802D31321500769BEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9ACAC3872D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ACAC3882D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9ACAC38A2D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShangXiang Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShangXiang;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.yuchen.electronic-shangxiang.ShangXiang";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		9ACAC38B2D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShangXiang Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShangXiang;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.yuchen.electronic-shangxiang.ShangXiang";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		9ACAC38E2D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShangXiang/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShangXiang;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ACAC38F2D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShangXiang/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShangXiang;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ACAC3912D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiangTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShangXiang.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShangXiang";
+			};
+			name = Debug;
+		};
+		9ACAC3922D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiangTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShangXiang.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShangXiang";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ACAC3942D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiangUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShangXiang;
+			};
+			name = Debug;
+		};
+		9ACAC3952D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiangUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShangXiang;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ACAC3972D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShangXiang Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShangXiang Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		9ACAC3982D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShangXiang Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShangXiang Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		9ACAC39A2D31321500769BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ShangXiang Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		9ACAC39B2D31321500769BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuchen.electronic-shangxiang.ShangXiang-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ShangXiang Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ACAC3382D31321300769BEB /* Build configuration list for PBXProject "ShangXiang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC3872D31321500769BEB /* Debug */,
+				9ACAC3882D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC3892D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC38A2D31321500769BEB /* Debug */,
+				9ACAC38B2D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC38D2D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC38E2D31321500769BEB /* Debug */,
+				9ACAC38F2D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC3902D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC3912D31321500769BEB /* Debug */,
+				9ACAC3922D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC3932D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiangUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC3942D31321500769BEB /* Debug */,
+				9ACAC3952D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC3962D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC3972D31321500769BEB /* Debug */,
+				9ACAC3982D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACAC3992D31321500769BEB /* Build configuration list for PBXNativeTarget "ShangXiang Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACAC39A2D31321500769BEB /* Debug */,
+				9ACAC39B2D31321500769BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ACAC3352D31321300769BEB /* Project object */;
+}
