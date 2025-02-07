@@ -1,6 +1,7 @@
 import SwiftUI
 import CoreMotion
 import AVKit
+import AVFoundation
 
 // 定义协议，用于通知 ContentView 检测到上香动作
 protocol MotionManagerDelegate {
@@ -14,51 +15,98 @@ struct ContentView: View, MotionManagerDelegate {
     @State private var timer: Timer?
     @State private var motionStatus = "准备上香"
     @State private var isPlayingVideo = false
+    @State private var videoPlayer: AVPlayer? = {
+        if let url = Bundle.main.url(forResource: "incense", withExtension: "mp4") {
+            return AVPlayer(url: url)
+        } else {
+            print("未找到视频文件")
+            return nil
+        }
+    } ()
+    
 
     var body: some View {
         VStack {
-            if isPlayingVideo {
-                VideoPlayer(url: Bundle.main.url(forResource: "incense", withExtension: "mp4")!)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            if isPlayingVideo{
+                if let player = videoPlayer {
+                    VideoPlayer(player: player)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                        .onAppear {
+                        player.seek(to: .zero)
+                            player.play()
+                            // 添加视频播放结束的观察
+                            NotificationCenter.default.addObserver(
+                                forName: .AVPlayerItemDidPlayToEndTime,
+                                object: player.currentItem,
+                                queue: .main
+                            ) { [weak player] _ in
+                                player?.pause()
+                                player?.seek(to: .zero)
+                                // 使用主线程更新 UI 状态
+                                DispatchQueue.main.async {
+                                    isPlayingVideo = false
+                                    isIncenseBurning = false
+                                }
+                            }
+                        }
+                        .onDisappear {
+                            player.pause()
+                            player.seek(to: .zero)
+                            NotificationCenter.default.removeObserver(self)
+                        }
+                        .overlay(Color.clear)
+                        .allowsHitTesting(false)
+                } else {
+                    Text("视频播放器未初始化成功")
+                }
             } else {
                 ZStack {
                     Image(systemName: "flame.fill")
-                       .font(.system(size: 40))
-                       .foregroundColor(isIncenseBurning ? .orange : .gray)
-                       .scaleEffect(isIncenseBurning ? 1.1 : 1)
-                       .animation(.easeInOut(duration: 0.5).repeatForever(), value: isIncenseBurning)
+                        .font(.system(size: 40))
+                        .foregroundColor(isIncenseBurning ? .orange : .gray)
+                        .scaleEffect(isIncenseBurning ? 1.1 : 1)
+                        .animation(.easeInOut(duration: 0.5).repeatForever(), value: isIncenseBurning)
                 }
-               .padding(.top, 20)
-
-
-                Text("\(formatTime(remainingTime))")
-                   .font(.system(.title2))
-                   .padding(.top, 8)
-
+                .padding(.top, 20)
+                
                 Text(motionStatus)
-                   .foregroundColor(isIncenseBurning ? .orange : .gray)
-                   .font(.body)
-                   .padding(.top, 8)
-
+                    .foregroundColor(isIncenseBurning ? .orange : .gray)
+                    .font(.body)
+                    .padding(.top, 8)
+                
                 Image(systemName: "watch.analog")
-                   .font(.system(size: 60))
-                   .rotationEffect(.degrees(motionManager.currentRotation))
-                   .animation(.easeInOut, value: motionManager.currentRotation)
-                   .padding(.top, 8)
+                    .font(.system(size: 60))
+                    .rotationEffect(.degrees(motionManager.currentRotation))
+                    .animation(.easeInOut, value: motionManager.currentRotation)
+                    .padding(.top, 8)
+                
+                // Button(action: {
+                //     isIncenseBurning = true
+                //     remainingTime = 60
+                //     isPlayingVideo = true
+                // }) {
+                //     Text("测试视频播放")
+                //         .foregroundColor(.blue)
+                //         .padding()
+                //         .background(RoundedRectangle(cornerRadius: 8)
+                //             .stroke(Color.blue, lineWidth: 1))
+                // }
+                // .padding(.top, 16)
             }
-           .onAppear {
-                motionManager.delegate = self
-                motionManager.startMotionUpdates { success in
-                    if success {
-                        motionStatus = "请做上香动作"
-                    } else {
-                        motionStatus = "无法检测动作"
-                    }
+        }
+       .onAppear {
+            motionManager.delegate = self
+            motionManager.startMotionUpdates { success in
+                if success {
+                    motionStatus = "请做上香动作"
+                } else {
+                    motionStatus = "无法检测动作"
                 }
             }
-           .onDisappear {
-                motionManager.stopMotionUpdates()
-            }
+        }
+       .onDisappear {
+            motionManager.stopMotionUpdates()
         }
     }
 
@@ -74,24 +122,24 @@ struct ContentView: View, MotionManagerDelegate {
         remainingTime = 60
         isPlayingVideo = true
 
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            if remainingTime > 0 {
-                remainingTime -= 1
-            } else {
-                stopBurning()
-            }
-        }
+//        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+//            if remainingTime > 0 {
+//                remainingTime -= 1
+//            } else {
+//                stopBurning()
+//            }
+//        }
     }
 
     private func stopBurning() {
         isIncenseBurning = false
         isPlayingVideo = false
-        timer?.invalidate()
-        timer = nil
     }
 
     func didDetectIncenseMotion() {
-        startBurning()
+        DispatchQueue.main.async {
+            startBurning()
+        }
     }
 }
 
@@ -144,34 +192,6 @@ class MotionManager: ObservableObject {
 
     func stopMotionUpdates() {
         motionManager.stopDeviceMotionUpdates()
-    }
-}
-
-struct VideoPlayer: UIViewRepresentable {
-    let url: URL
-    
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView()
-        let player = AVPlayer(url: url)
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = view.bounds
-        playerLayer.videoGravity = .resizeAspectFill
-        view.layer.addSublayer(playerLayer)
-        player.play()
-        
-        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
-                                            object: player.currentItem, queue: .main) { _ in
-            player.seek(to: CMTime.zero)
-            player.play()
-        }
-        
-        return view
-    }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {
-        if let playerLayer = uiView.layer.sublayers?.first as? AVPlayerLayer {
-            playerLayer.frame = uiView.bounds
-        }
     }
 }
 
