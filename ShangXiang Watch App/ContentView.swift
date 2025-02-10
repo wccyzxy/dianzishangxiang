@@ -32,6 +32,8 @@ struct ContentView: View, MotionManagerDelegate {
                     VideoPlayer(player: player)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .edgesIgnoringSafeArea(.all)
+                        .scaleEffect(x: 2, y:1.5, anchor: .center) // 放大视频
+                        .clipped() // 裁剪超出部分
                         .onAppear {
                         player.seek(to: .zero)
                             player.play()
