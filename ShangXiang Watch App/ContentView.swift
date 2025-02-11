@@ -33,6 +33,14 @@ struct ContentView: View, MotionManagerDelegate {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .edgesIgnoringSafeArea(.all)
                         .scaleEffect(x: 2, y:1.5, anchor: .center) // 放大视频
+                        .aspectRatio(contentMode: .fill)
+                        .frame(
+                            width: WKInterfaceDevice.current().screenBounds.width,
+                            height: WKInterfaceDevice.current().screenBounds.height * 1.2)
+                            .position(
+                                x: WKInterfaceDevice.current().screenBounds.width/2,
+                                y: WKInterfaceDevice.current().screenBounds.height/2)
+                        .ignoresSafeArea()
                         .clipped() // 裁剪超出部分
                         .onAppear {
                         player.seek(to: .zero)
@@ -83,18 +91,18 @@ struct ContentView: View, MotionManagerDelegate {
                     .animation(.easeInOut, value: motionManager.currentRotation)
                     .padding(.top, 8)
                 
-                // Button(action: {
-                //     isIncenseBurning = true
-                //     remainingTime = 60
-                //     isPlayingVideo = true
-                // }) {
-                //     Text("测试视频播放")
-                //         .foregroundColor(.blue)
-                //         .padding()
-                //         .background(RoundedRectangle(cornerRadius: 8)
-                //             .stroke(Color.blue, lineWidth: 1))
-                // }
-                // .padding(.top, 16)
+                Button(action: {
+                    isIncenseBurning = true
+                    remainingTime = 60
+                    isPlayingVideo = true
+                }) {
+                    Text("测试视频播放")
+                        .foregroundColor(.blue)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.blue, lineWidth: 1))
+                }
+                .padding(.top, 16)
             }
         }
        .onAppear {
@@ -110,6 +118,7 @@ struct ContentView: View, MotionManagerDelegate {
        .onDisappear {
             motionManager.stopMotionUpdates()
         }
+       .ignoresSafeArea(.all)
     }
 
     private func formatTime(_ seconds: Int) -> String {
