@@ -72,37 +72,28 @@ struct ContentView: View, MotionManagerDelegate {
                 }
             } else {
                 ZStack {
-                    Image(systemName: "flame.fill")
-                        .font(.system(size: 40))
-                        .foregroundColor(isIncenseBurning ? .orange : .gray)
-                        .scaleEffect(isIncenseBurning ? 1.1 : 1)
-                        .animation(.easeInOut(duration: 0.5).repeatForever(), value: isIncenseBurning)
+                    if let headerImage = UIImage(named: "header.png") ?? UIImage(contentsOfFile: Bundle.main.path(forResource: "header", ofType: "png") ?? "") {
+                        Image(uiImage: headerImage)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: WKInterfaceDevice.current().screenBounds.width * 1.0)
+                    }
+                    
+                    // VStack {                        
+                    //     Button(action: {
+                    //         isIncenseBurning = true
+                    //         remainingTime = 60
+                    //         isPlayingVideo = true
+                    //     }) {
+                    //         Text("测试视频播放")
+                    //             .foregroundColor(.blue)
+                    //             .padding()
+                    //             .background(RoundedRectangle(cornerRadius: 8)
+                    //                 .stroke(Color.blue, lineWidth: 1))
+                    //     }
+                    //     .padding(.top, 16)
+                    // }
                 }
-                .padding(.top, 20)
-                
-                Text(motionStatus)
-                    .foregroundColor(isIncenseBurning ? .orange : .gray)
-                    .font(.body)
-                    .padding(.top, 8)
-                
-                Image(systemName: "watch.analog")
-                    .font(.system(size: 60))
-                    .rotationEffect(.degrees(motionManager.currentRotation))
-                    .animation(.easeInOut, value: motionManager.currentRotation)
-                    .padding(.top, 8)
-                
-                Button(action: {
-                    isIncenseBurning = true
-                    remainingTime = 60
-                    isPlayingVideo = true
-                }) {
-                    Text("测试视频播放")
-                        .foregroundColor(.blue)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.blue, lineWidth: 1))
-                }
-                .padding(.top, 16)
             }
         }
        .onAppear {
@@ -132,14 +123,6 @@ struct ContentView: View, MotionManagerDelegate {
         isIncenseBurning = true
         remainingTime = 60
         isPlayingVideo = true
-
-//        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-//            if remainingTime > 0 {
-//                remainingTime -= 1
-//            } else {
-//                stopBurning()
-//            }
-//        }
     }
 
     private func stopBurning() {
