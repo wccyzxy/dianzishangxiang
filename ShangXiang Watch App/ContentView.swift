@@ -57,6 +57,8 @@ struct ContentView: View, MotionManagerDelegate {
                                 DispatchQueue.main.async {
                                     isPlayingVideo = false
                                     isIncenseBurning = false
+                                    // 重置 MotionManager 的检测状态
+                                    motionManager.resetMotionDetection()
                                 }
                             }
                         }
@@ -167,6 +169,11 @@ class MotionManager: ObservableObject {
     }
 
     private func processMotion(_ motion: CMDeviceMotion) {
+        // 如果正在播放视频，不处理动作
+        if isIncenseMotionDetected {
+            return
+        }
+
         let pitch = motion.attitude.pitch * 180 / .pi
         currentRotation = pitch
 
@@ -186,6 +193,12 @@ class MotionManager: ObservableObject {
 
     func stopMotionUpdates() {
         motionManager.stopDeviceMotionUpdates()
+    }
+
+    func resetMotionDetection() {
+        isIncenseMotionDetected = false
+        motionStartTime = nil
+        lastPitch = 0
     }
 }
 
